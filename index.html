@@ -1,102 +1,166 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corps – Professionel urreparation</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: "Georgia", serif;
-            background-color: #f5f5f5;
-            color: #222;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #111;
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 2px;
-        }
-        header p {
-            margin-top: 10px;
-            font-style: italic;
-            color: #ccc;
-        }
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 50px 20px;
-        }
-        h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-        footer {
-            background-color: #111;
-            color: #ccc;
-            text-align: center;
-            padding: 30px 20px;
-        }
-        a {
-            color: #222;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CORPS – Urreparation i Frederikssund Kommune</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .contact {
+      background: #111;
+      color: white;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .contact a {
+      color: #4da3ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
+  <header>
     <h1>CORPS</h1>
-    <p>Professionel urreparation – klassisk håndværk</p>
-</header>
+    <p>Reparation og service af ure – lokalt i Frederikssund Kommune</p>
+  </header>
 
-<section>
-    <h2>Om Corps</h2>
-    <p>
-        Corps er et mindre urværksted i Frederikssund med fokus på klassisk urhåndværk.
-        Vi reparerer og servicerer armbåndsure med stor omhu – både mekaniske og quartz.
-    </p>
-    <p>
-        Vores mål er at levere holdbare reparationer, fair priser og personlig service.
-    </p>
-</section>
+  <section>
+    <h2>Hvad vi tilbyder</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Batteriskift</h3>
+        <p>Udskiftning af batteri på de fleste typer ure – hurtigt og sikkert.</p>
+      </div>
+      <div class="card">
+        <h3>Mekaniske ure</h3>
+        <p>Reparation og justering af mekaniske og automatiske ure.</p>
+      </div>
+      <div class="card">
+        <h3>Service & rens</h3>
+        <p>Grundig rens og gennemgang for at forlænge urets levetid.</p>
+      </div>
+      <div class="card">
+        <h3>Glas & remme</h3>
+        <p>Udskiftning og justering af urglas og remme.</p>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Ydelser</h2>
-    <ul>
-        <li>Batteriskift</li>
-        <li>Reparation af mekaniske ure</li>
-        <li>Service og rens</li>
-        <li>Udskiftning af urglas</li>
-        <li>Justering og udskiftning af remme</li>
-        <li>Fejlsøgning og vurdering</li>
-    </ul>
-</section>
+  <section>
+    <h2>Om CORPS</h2>
+    <div class="about">
+      <p>
+        CORPS er et mindre, lokalt urværksted i Frederikssund Kommune.
+        Det er ikke en stor professionel butik – men et seriøst hobbyværksted
+        med stor interesse for ure og håndværk.
+      </p>
+      <p style="margin-top:15px;">
+        Vi lægger vægt på ærlig vurdering, god kommunikation og ordentligt arbejde.
+        Hvis et ur ikke kan betale sig at reparere, siger vi det som det er.
+      </p>
+    </div>
+  </section>
 
-<section>
+  <section>
     <h2>Kontakt</h2>
-    <p><strong>Telefon:</strong> 60 55 13 54</p>
-    <p><strong>E-mail:</strong> <a href="mailto:mathias.egmontpetersen@gmail.com">mathias.egmontpetersen@gmail.com</a></p>
-    <p><strong>By:</strong> Frederikssund</p>
-</section>
+    <div class="contact">
+      <p>📍 Frederikssund Kommune</p>
+      <p>📞 <a href="tel:60551354">60 55 13 54</a></p>
+      <p>📧 <a href="mailto:mathias.egmontpetersen@gmail.com">mathias.egmontpetersen@gmail.com</a></p>
+    </div>
+  </section>
 
-<footer>
-    <p>© Corps – Frederikssund</p>
-</footer>
+  <footer>
+    © 2026 CORPS – Ure repareret lokalt i Frederikssund Kommune
+  </footer>
 
 </body>
 </html>
